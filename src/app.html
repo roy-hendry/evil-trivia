@@ -4,9 +4,31 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="./src/output.css" rel="stylesheet">
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
+		<div>
+			<table class="table-auto">
+				<tr class="border-2 divide-gray-800">
+					<th>Question: xxxxxxxxxxxxxxxxxxxxxxxxx</th>
+				</tr>
+				<tr class="border-2 divide-gray-800">
+					<th>Answers: xxxxxxxxxxxxxxxxxxx</th>
+				</tr>
+				<tbody">
+					<tr >
+						<td class="flex-col flex border-2 divide-gray-800">A1</td>
+						<td class="flex-col flex border-2 divide-gray-800">A2</td>
+					</tr>
+					<tr>
+						<td class="flex-col flex border-2 divide-gray-800">A3</td>
+						<td class="flex-col flex border-2 divide-gray-800">A4</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
 	</body>
 </html>
