@@ -28,7 +28,14 @@
 					</tr>
 				</tbody>
 			</table>
-
+			<script>
+				async function getEvilTrivia() {
+					  const response = await fetch("https://the-trivia-api.com/v2/questions?difficulties=easy,medium&categories=science&limit=10");
+					  const data = await response.json();
+					  console.log(data);
+				}
+				getEvilTrivia();
+			</script>
 		</div>
 	</body>
 </html>
